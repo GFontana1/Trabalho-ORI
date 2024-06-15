@@ -18,9 +18,9 @@ public class App extends JFrame {
             while ( rs.next() ) {
                JOptionPane.showMessageDialog (
                 null, 
-                rs.getInt("id")+"\n" + 
-                rs.getString("nome")+"\n" +
-                rs.getString("telefone")+"\n" );
+                rs.getInt("Id")+"\n" + 
+                rs.getString("Produto")+"\n" +
+                rs.getFloat("Preco")+"\n" );
             }
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
